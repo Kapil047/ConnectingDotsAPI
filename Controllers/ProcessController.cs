@@ -47,7 +47,7 @@ namespace ConnectingDotsAPI.Controllers
             }
         }
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> SaveProcess([FromBody] string name)
         {
             try
