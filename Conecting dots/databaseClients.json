@@ -1,6 +1,0 @@
-{
-  "apivaastuproperties.ensuenotech.com": "data source=68.178.202.130;initial catalog=VaastuProperties_db;persist security info=True;user id=sa;password=Et@123321;App=EntityFramework;MultipleActiveResultSets=true;TrustServerCertificate=true",
-  "apibankerbuddy.ensuenotech.com": "data source=68.178.202.130;initial catalog=BankerBuddy_db;persist security info=True;user id=sa;password=Et@123321;App=EntityFramework;MultipleActiveResultSets=true;TrustServerCertificate=true",
-  "apiconnectingdots.ensuenotech.com": "data source=68.178.202.130;initial catalog=BankerBuddy_db;persist security info=True;user id=sa;password=Et@123321;App=EntityFramework;MultipleActiveResultSets=true;TrustServerCertificate=true",
-  "default": "data source=68.178.202.130;initial catalog=BankerBuddy_db;persist security info=True;user id=sa;password=Et@123321;App=EntityFramework;MultipleActiveResultSets=true;TrustServerCertificate=true"
-}
