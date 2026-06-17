@@ -24,6 +24,8 @@ using System.Text.Json.Serialization;
 using System.Text.Json;
 using System.Text;
 using ConnectingDotsAPI.Services.OrderService;
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
