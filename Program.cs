@@ -112,6 +112,7 @@ var app = builder.Build();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseCors("AllowCors");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -120,14 +121,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseCors("AllowCors");
 app.UseOutputCache();
 
 app.MapControllers();
 //app.UseMiddleware<TokenValidationMiddleware>();
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<ConnectingDotsDbContext>();
-    db.Database.Migrate();
-}
+ 
 app.Run();
