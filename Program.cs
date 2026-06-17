@@ -55,8 +55,11 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-builder.Services.AddDbContext<ConnectingDotsDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("CS")));
-
+builder.Services.AddDbContext<ConnectingDotsDbContext>(
+    options => options.UseMySql(
+        configuration.GetConnectionString("CS"),
+        new MySqlServerVersion(new Version(8, 0, 0))
+    ));
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSingleton<Dictionary<string, string>>(); // Registering the Dictionary
 
